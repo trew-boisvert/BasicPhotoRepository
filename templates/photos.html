@@ -1,0 +1,69 @@
+{% extends 'base.html' %}
+
+{% block title %}Photos{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block bodytitle %}{% endblock %}
+
+{% block body %}
+  <div class="row">
+    <h2>
+      Upload a Photo
+    </h2>
+  </div>
+
+  <form id="upload-photos">
+    <div class="row">
+      <label for="post-title">Name of your photo post:</label>
+      <input type="text" id="post-title">
+    </div>
+
+    <div class="row">
+      <label for="post-comment">Comment on your photo:</label>
+      <input type="text" id="post-comment">
+    </div>
+
+    <div class="row">
+      <label for="files">Please select photos to upload:</label>
+      <input type="file" id="photo_upload">
+    </div>
+
+    <div class="row">
+      <input type="submit" value="Upload Photo" name="submit" class="btn btn-default">
+    </div>
+  </form>
+
+  <div class="row">
+    <p id="data"></p>
+  </div>
+
+  <div class="row">
+    <dd id="photo_upload_success"></dd>
+  </div>
+
+  <div class="row">
+    <h2>
+      Photo Gallery
+    </h2>
+  </div>
+  
+{% for post in posts %}
+  <div>
+    <div class="row">
+      <h3>{{ post.post_title }}</h3>
+    </div>
+
+    <div class="row">
+      <h4>{{ post.post_comment }}</h3>
+    </div>
+
+    <div class="row">
+      <img src="{{ post.post_photo_link }}" style="border: 2px solid #3D0942;" alt="Photo of knitting">
+    </div>
+  </div>
+{% endfor %}
+
+{% endblock %}
+
+{% block after_body %}{% endblock %}
