@@ -1,0 +1,35 @@
+{% extends 'base.html' %}
+
+{% block title %}Profile{% endblock %}
+
+{% block head %}{% endblock %}
+
+{% block bodytitle %}{% endblock %}
+
+{% block body %}
+
+  <div class="row">
+    <h2>{{ user.user_name }}'s Dashboard</h2>
+  </div>
+
+  <div class="row">
+    <p>Welcome, {{ user.user_name }}!</p>
+  </div>
+
+  <section id="display-posts">
+
+    <div class="row">
+      <dt>Current Posts:</dt>
+    </div>
+
+    <div class="row">
+      <button type="button" id='display-post-list' class="btn btn-default">Display Posts</button>
+    </div>
+    
+    <dd id="current-posts"></dd>
+
+  </section>
+
+{% endblock %}
+
+{% block after_body %}{% endblock %}
