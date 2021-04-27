@@ -29,7 +29,7 @@ class Post(db.Model):
     post_id = db.Column(db.Integer, primary_key=True, autoincrement=True, nullable=False)
     user_id = db.Column(db.Integer, db.ForeignKey('users.user_id'), nullable=False)
     post_date = db.Column(db.DateTime, nullable=False)
-    post_title = db.Column(db.String(), nullable=False)
+    post_name = db.Column(db.String(), nullable=False)
     post_comment = db.Column(db.String(), nullable=True)
     post_photo_link = db.Column(db.String(), nullable=False)
 
