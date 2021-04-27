@@ -1,4 +1,4 @@
-from model import db, User, ProjectRecord, Pattern, Instruction, Post, connect_to_db
+from model import db, User, Post, connect_to_db
 from werkzeug.security import generate_password_hash, check_password_hash
 
 #USER#################################################################################
