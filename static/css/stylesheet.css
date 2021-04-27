@@ -1,21 +1,21 @@
 
 .btn-primary {
-    background:#A91678;
+    background:#E06967;
 }
 
 .btn-default {
-    border: 1px solid #2935A3;
-    background-color: #C7E07B;
+    border: 1px solid #9CF6F6;
+    background-color: #FF7477;
 }
 
 .btn-danger {
-    background: #A91678;
+    background: #E06967;
 }
 
 .btn:hover
 {
 background-image:none;
-background-color:#ABD039;
+background-color:#FF7477;
 }
 
 #bg {
@@ -32,19 +32,19 @@ background-color:#ABD039;
     width: 900px;
     margin: 50px auto;
     padding: 40px;
-    background: #C1DCED;
-    border: 3px solid #3D0942;
+    background: #9CF6F6;
+    border: 3px solid #2C2C34;
     border-radius: 7px;
-    box-shadow: 1px 1px 1px #2935A3;
+    box-shadow: 1px 1px 1px #9CF6F6;
 }
 
 .container {
-    background-color: #C1DCED;
+    background-color: #9CF6F6;
     background-size: cover;  
 }
 
 ::placeholder { 
-    color: #2935A3;
+    color: #9CF6F6;
   }
 
 input {
@@ -57,22 +57,22 @@ input[type=text] {
 
 body {
     font-family: 'Roboto', sans-serif;
-    color: #3D0942;
+    color: #2C2C34;
 }
 
 h1 {
     font-family: 'Roboto', sans-serif;
     font-weight: bold;
-    color: #3D0942;
+    color: #2C2C34;
 }
 
 h2 {
     font-family: 'Roboto', sans-serif;
-    color: #3D0942;
+    color: #2C2C34;
 }
 
 a {
-    color: #2935A3;
+    color: #9CF6F6;
 }
 
 img {
