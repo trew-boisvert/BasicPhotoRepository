@@ -17,11 +17,25 @@ __Back End:__ Python, Flask, PostgreSQL, SQLAlchemy <br/>
 
 ## <a name="features"></a>Features
 
+View the welcome page.
+
+![Welcome Pic](/static/images/WelcomePageFamCam.png)
+
 Create and Log in to an account.
+
+![Login Pic](/static/images/LoginFamCam.png)
+
+View your profile.
+
+![Profile Pic](/static/images/ProfileFamCam.png)
 
 Upload photos to the photo/discussion board.
 
+![Photo Page Pic](/static/images/PhotoPageFamCam.png)
+
 Log out from or delete your account.  Fam's Out, Cam's Out! respects your right to be forgotten!
+
+![Logout Pic](/static/images/LogoutFamCam.png)
 
 ## <a name="setup"></a>Setup/Installation
 
