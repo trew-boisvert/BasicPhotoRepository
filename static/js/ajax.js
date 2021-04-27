@@ -62,7 +62,7 @@ $('#upload-photos').on('submit', (evt) => {
     cloud_url.then((res_url) => {
         
         const photo_post_data = {
-            'post_title': $('#post-title').val(),
+            'post_name': $('#post-name').val(),
             'post_comment': $('#post-comment').val(),
             'img_url': res_url
         }

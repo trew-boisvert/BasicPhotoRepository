@@ -26,7 +26,7 @@ def welcome_page():
     """Show the welcome/homepage."""
 
     return render_template('welcome.html')
-    
+
 #Login/Signup##########################################################################################
 
 @app.route('/login')
@@ -90,13 +90,13 @@ def photos_page():
 def upload_photo_post():
     """Upload a photo post."""
 
-    post_title = request.form.get('post_title')
+    post_name = request.form.get('post_name')
     post_comment = request.form.get('post_comment')
     img_url = request.form.get('img_url')
 
     now = datetime.now()
 
-    post = crud.create_post(session['user_id'], now, post_title, post_comment, img_url)
+    post = crud.create_post(session['user_id'], now, post_name, post_comment, img_url)
 
     return jsonify({'status': 'ok'})
 

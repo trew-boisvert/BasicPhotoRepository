@@ -32,13 +32,13 @@ def delete_user(userID):
 
 #POST#################################################################################
 
-def create_post(user_id, post_date, post_title, post_comment, post_photo_link):
+def create_post(user_id, post_date, post_name, post_comment, post_photo_link):
     """Create and return a new post."""
 
     post = Post(
         user_id=user_id,
         post_date=post_date,
-        post_title=post_title,
+        post_name=post_name,
         post_comment=post_comment,
         post_photo_link=post_photo_link)
 

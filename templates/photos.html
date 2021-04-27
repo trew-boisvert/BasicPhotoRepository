@@ -15,8 +15,8 @@
 
   <form id="upload-photos">
     <div class="row">
-      <label for="post-title">Name of your photo post:</label>
-      <input type="text" id="post-title">
+      <label for="post-name">Name of your photo post:</label>
+      <input type="text" id="post-name">
     </div>
 
     <div class="row">
@@ -51,7 +51,7 @@
 {% for post in posts %}
   <div>
     <div class="row">
-      <h3>{{ post.post_title }}</h3>
+      <h3>{{ post.post_name }}</h3>
     </div>
 
     <div class="row">
@@ -59,7 +59,7 @@
     </div>
 
     <div class="row">
-      <img src="{{ post.post_photo_link }}" style="border: 2px solid #3D0942;" alt="Photo of knitting">
+      <img src="{{ post.post_photo_link }}" style="border: 2px solid #3D0942;" alt="Photo">
     </div>
   </div>
 {% endfor %}
