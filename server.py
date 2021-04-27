@@ -18,6 +18,15 @@ cloudinary.config(
   api_secret =  APIsecret
 )
 
+
+#Welcome####################################################################################################
+
+@app.route('/')
+def welcome_page():
+    """Show the welcome/homepage."""
+
+    return render_template('welcome.html')
+    
 #Login/Signup##########################################################################################
 
 @app.route('/login')
