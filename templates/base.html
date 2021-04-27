@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fam's out, Cam's out! | {% block title %}{% endblock %}</title>
+    <link rel="shortcut icon" type="image/jpg" href="/static/images/cameraicon.png"/>
+    <link rel="stylesheet"
+          href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.css"/>
+    <link rel="stylesheet" href="../static/css/stylesheet.css"/>
+    <script
+      src="https://code.jquery.com/jquery-3.4.1.js"
+      integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
+      crossorigin="anonymous">
+    </script>
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Elsie+Swash+Caps&family=Roboto&display=swap" rel="stylesheet">
+      <link rel="preconnect" href="https://fonts.gstatic.com">
+      <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+      <script src="https://kit.fontawesome.com/883c02007f.js" crossorigin="anonymous"></script>
+    {% block head %}{% endblock %}
+</head>
+  <body>
+    <div id="page-wrap" class="container">
+
+      {% for msg in get_flashed_messages() %}
+        <p class="flash-msg">
+          {{ msg }}
+        </p>
+
+      {% endfor %}
+      <div class="row">
+        <a href="http://0.0.0.0:5000/"><h1>Fam's out, Cam's out!</h1></a>
+      </div>
+
+        {% block bodytitle %}{% endblock %}
+        
+        <div class="hero-head">
+          <nav class="navbar">
+            <div>
+              <div id="navbarMenuHeroA" class="navbar-menu">
+                <div class="navbar-end">
+                  <div class="btn-group btn-group-justified">
+                    <a href="http://0.0.0.0:5000/login" class="btn btn-default">Log-in/Sign up</a>
+                    <a href="http://0.0.0.0:5000/photos" class="btn btn-default">Photos</a>
+                    <a href="http://0.0.0.0:5000/profile" class="btn btn-default">Profile</a>
+                    <a href="http://0.0.0.0:5000/logout" class="btn btn-default">Logout</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </nav>
+        </div>
+
+        {% block body %}{% endblock %}
+      
+        {% block after_body %}{% endblock %}
+        
+      <script src="/static/js/ajax.js"></script>
+      </div>
+    </div>
+
+    <div id="bg">
+      <img src="../static/images/camera-pattern-background.jpg" alt="Camera print" style="max-width: 100%; height: auto;">
+    </div>
+
+  </body>
+</html>
