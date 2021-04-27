@@ -47,6 +47,11 @@ def create_post(user_id, post_date, post_title, post_comment, post_photo_link):
 
     return post
 
+def get_post_by_id(id):
+    """Find a post by post_id."""
+
+    return Post.query.filter(Post.post_id == id).first()
+
 def get_posts():
     """Return all posts."""
 
@@ -74,7 +79,11 @@ def delete_all_posts_for_single_user(userID):
 
     return
 
-
+def get_post_object(list_of_objects):
+    result = {}
+    for obj in list_of_objects:
+        result[obj.post_id] = obj.post_name
+    return result
 
 if __name__ == '__main__':
     from server import app
