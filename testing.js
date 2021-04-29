@@ -41,7 +41,7 @@ function every(array, callbackFunction) {
       if (actual === expected) {
           console.log("PASSED");
       } else {
-          console.log(FAILED [${testName}] expected ${expected} but got ${actual});
+          console.log(`FAILED [${testName}] expected ${expected} but got ${actual}`);
       }
   }
   // Test cases
