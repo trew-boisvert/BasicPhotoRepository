@@ -5,9 +5,14 @@ List of Features:
     Sign up for account
         Input type:
             Username - text box
+                What happens when users enter nothing?
             Password - password box
+                What happens when users enter nothing?
             Email - email box
+                What happens when users enter something that is not an email address?
+                What happens when users enter nothing?
             Button - click
+                What happens on click with partially or incorrectly filled form?
         Check database for new entry
         Check entry matches info added
     Login to account
